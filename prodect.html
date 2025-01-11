@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Page</title>
+    <script src="./productscript.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=Carme&family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Martian+Mono:wght@100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Wellfleet&display=swap" rel="stylesheet">
+      </head>
+  </head>
+  <style>
+    
+        body {
+            font-family: "Carme", serif;
+    font-weight: 400;
+    font-style: normal;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #add8e6; /* Soft blue */
+            padding: 1rem;
+            color: #fff;
+        }
+
+        nav h1 {
+            margin: 0;
+        }
+
+        nav a {
+            border: 1px solid black;
+            background: black;
+            border-radius: 5px;
+            padding: 0.8em 1.5em;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid black;
+            width: 80%;
+            max-width: 600px; /* Max width for larger screens */
+            height: auto; /* Adjust height automatically */
+            justify-content: space-around;
+            margin: 7% auto;
+            padding: 2rem; /* Add padding for better spacing */
+        }
+
+        main input {
+            width: 100%; /* Full width for inputs */
+            max-width: 400px; 
+            padding: 1em;
+            margin-bottom: 1rem; /* Space between inputs */
+        }
+
+        main a {
+            padding: 0.8em;
+            width: 100%; /* Full width for button */
+            max-width: 200px; /* Limit max width */
+            text-decoration: none;
+            text-align: center; /* Center text in button */
+            color: rgb(0, 0, 0);
+            background: #add8e6;
+        }
+        .dlt-product{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column; /* Stack items on smaller screens */
+                align-items: flex-start; /* Align items to the start */
+                padding: 1rem; /* Adjust padding */
+                text-align: left; /* Align text to the left */
+            }
+
+            nav a {
+                margin-top: 0.5rem; /* Space between nav links */
+                width: auto; /* Allow links to adjust based on content */
+                padding: 0.5em; /* Adjust padding for smaller screens */
+            }
+
+            main {
+                width: 90%; /* Use more width on small screens */
+                margin-top: 5%; /* Space from top on small screens */
+                padding-left: 1rem; /* Add left padding for better spacing */
+                padding-right: 1rem; /* Add right padding for better spacing */
+            }
+        }
+  </style>
+  <body>
+    <nav>
+      <h1>Admin Product Upload Portal</h1>
+      <a href="/login.html">Log Out</a>
+      
+    </nav>
+    <main>
+        <h2>Add Product Details</h2>
+      <input type="text" placeholder="product main" id="productName" />
+      <input type="text" placeholder="product price" id="productPrice" />
+      <input
+        type="text"
+        placeholder="product description"
+        id="productDescription"
+      />
+      <a href="#" id="addThis">Add Product</a>
+      <div class="dlt-product">
+        <h2>Remove Product</h2>
+<input type="text" placeholder="Enter Product " id="productrm">
+<a href="#" id="remove">Remove</a>
+
+      </div>
+    </main>
+  </body>
+</html>

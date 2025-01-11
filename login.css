@@ -1,0 +1,80 @@
+body{
+    background-image: url('./images/mesh-420.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Carme", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+*{
+    border-radius: 5px;
+
+}
+main h1{
+    color: white;
+     font-size: 3em; 
+  }
+
+
+main {
+  height: 35rem;
+  width: 60%;
+  margin: 3% auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+box-shadow: 0px 0px 3px 5px rgba(0, 0, 0, 0.199);
+
+}
+main input {
+  width: 40%;
+  padding: 2em;
+  box-shadow: 0px 0px 5px 5px rgba(3, 3, 3, 0.199);
+  transition: all 0.4s;
+  outline: none;
+  border: transparent;
+  &:hover {
+    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.281);
+    transform: scale(1.05);
+  }
+}
+a {
+  padding: 1.5em;
+  width: 20%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  box-shadow: 0px 0px 5px 5px rgba(3, 3, 3, 0.199);
+  transition: all 0.4s;
+  &:hover {
+    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.295);
+    transform: scale(1.05);
+  }
+}
+.checkbox {
+  display: flex;
+  width: 40%;
+  padding: .8em;
+  justify-content: start;
+  color: white;
+
+}
+
+
+main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.281); 
+  backdrop-filter: blur(15px); 
+  z-index: -1;
+}
